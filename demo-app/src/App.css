@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.btnBox {
+  height: 100px;
+  width: 200px;
+  background-color: red;
+  border: 2px solid black;
+}
