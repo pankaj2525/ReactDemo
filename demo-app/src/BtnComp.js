@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 function BtnComp(props) {
-    let defaultValue;
+    const [ defaultValue, setDefaultValue ] = useState();
     function sendValue(e) {
         console.log("Clicked", defaultValue);
         props.recieveDefaultValue(defaultValue);
     }
     function recieveValue(e) {
         console.log(e.target.value);
-        defaultValue = e.target.value;
+        // defaultValue = e.target.value;
+        setDefaultValue( parseInt( e.target.value));
     }
     return (
         <div className='btnBox'>
-            <input type="text" onChange={recieveValue}></input>
+            <input type="text" onChange={recieveValue} value={ defaultValue }></input>
             <button onClick={sendValue}>submit</button>
             <button >clickMe</button>
         </div>
