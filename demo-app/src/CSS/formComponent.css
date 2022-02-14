@@ -1,0 +1,42 @@
+.row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.labels {
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 75% 25%;
+}
+.formButton {
+  width: 100px;
+  height: 35px;
+  margin-top: -15px;
+  background-color: rgb(0, 247, 255);
+  border-radius: 15px;
+}
+input {
+  height: 25px;
+  width: 90%;
+  align-self: flex-end;
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+}
+.warning-text {
+  font-size: 10px;
+  color: red;
+}

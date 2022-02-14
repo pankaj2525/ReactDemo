@@ -1,0 +1,18 @@
+body {
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  display: block;
+  background-color: rgb(117, 255, 255);
+}
+#root {
+  align-items: center;
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
